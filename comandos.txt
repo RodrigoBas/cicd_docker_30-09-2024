@@ -1,0 +1,11 @@
+docker build -t container-hello:latest .
+
+docker tag container-hello:latest rodrigobas/container-hello:latest
+
+docker logout
+
+docker login
+
+docker push rodrigobas/container-hello:latest
+
+docker run rodrigobas/container-hello:latest
